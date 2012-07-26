@@ -13,7 +13,7 @@
 	</div><!-- #main -->
 
 	<div id="footer" role="contentinfo">
- 
+
             <div class="plasma-left-top"></div>
             <div class="plasma-top"></div>
             <div class="plasma-right-top"></div>
@@ -21,17 +21,14 @@
             <div class="plasma-center" >
                 <div id="colophon">
 			<div id="site-info">
-				<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php bloginfo( 'name' ); ?>
-				</a>
-                                Original theme twentyten, modified by csslayer. Better experience in firefox and webkit.
+			KDE Air theme by <a href="http://kde-look.org/content/show.php?content=129377">csslayer</a>, forked by <a href="http://blog.tampakrap.gr">tampakrap</a> | The content of this blog is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
 			</div><!-- #site-info -->
 
 			<div id="site-generator">
 				<?php do_action( 'twentyten_credits' ); ?>
 				<a href="<?php echo esc_url( __('http://wordpress.org/', 'twentyten') ); ?>"
 						title="<?php esc_attr_e('Semantic Personal Publishing Platform', 'twentyten'); ?>" rel="generator">
-					<?php printf( __('Proudly powered by %s.', 'twentyten'), 'WordPress' ); ?>
+					<?php printf( __('Powered by %s.', 'twentyten'), 'WordPress' ); ?>
 				</a>
 			</div><!-- #site-generator -->
 
