@@ -396,12 +396,13 @@ if ( ! function_exists( 'twentyten_posted_on' ) ) :
  * @since Twenty Ten 1.0
  */
 function twentyten_posted_on() {
-	printf( __( '<span class="%1$s">Posted on</span> %2$s <span class="meta-sep">by</span> %3$s', 'twentyten' ),
+	printf( __( '<div class="%1$s">%2$s</div><span class="meta-sep"></span> %3$s', 'twentyten' ),
 		'meta-prep meta-prep-author',
-		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a>',
+		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><div class="entry-date">%3$s<br /><span style="font-size: 20px">%4$s</span></div></a>',
 			get_permalink(),
 			esc_attr( get_the_time() ),
-			get_the_date()
+			date('M'),
+			date('j')
 		),
 		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
 			get_author_posts_url( get_the_author_meta( 'ID' ) ),

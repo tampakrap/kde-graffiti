@@ -80,8 +80,8 @@
 			<div class="entry-content">
 <?php if ( post_password_required() ) : ?>
 				<?php the_content(); ?>
-<?php else : ?>			
-				<?php 
+<?php else : ?>
+				<?php
 					$images = get_children( array( 'post_parent' => $post->ID, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'orderby' => 'menu_order', 'order' => 'ASC', 'numberposts' => 999 ) );
 					if ( $images ) :
 						$total_images = count( $images );
@@ -147,6 +147,24 @@
 
 			<div class="entry-meta">
 				<?php twentyten_posted_on(); ?>
+				<?php if ( count( get_the_category() ) ) : ?>
+					<br />
+					<span class="cat-links">
+						<?php printf( __( '%2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
+					</span>
+					<br />
+				<?php endif; ?>
+				<?php
+					$tags_list = get_the_tag_list( '', ', ' );
+					if ( $tags_list ):
+				?>
+					<span class="tag-links">
+						<?php printf( __( '%2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
+					</span>
+					<br />
+				<?php endif; ?>
+				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?></span>
+				<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 			</div><!-- .entry-meta -->
 
 	<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
@@ -160,25 +178,6 @@
 			</div><!-- .entry-content -->
 	<?php endif; ?>
 
-			<div class="entry-utility">
-				<?php if ( count( get_the_category() ) ) : ?>
-					<span class="cat-links">
-						<?php printf( __( '<span class="%1$s">Posted in</span> %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
-					</span>
-					<span class="meta-sep">|</span>
-				<?php endif; ?>
-				<?php
-					$tags_list = get_the_tag_list( '', ', ' );
-					if ( $tags_list ):
-				?>
-					<span class="tag-links">
-						<?php printf( __( '<span class="%1$s">Tagged</span> %2$s', 'twentyten' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
-					</span>
-					<span class="meta-sep">|</span>
-				<?php endif; ?>
-				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?></span>
-				<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
-			</div><!-- .entry-utility -->
                      </div><!-- plasma-post-center -->
                     <div class="plasma-left-bottom" ></div>
                     <div class="plasma-bottom" ></div>

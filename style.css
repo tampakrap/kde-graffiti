@@ -374,6 +374,7 @@ a:hover {
 	color: #000;
 	font-weight: bold;
 	text-decoration: none;
+	text-shadow: 2px 2px 2px #ddd;
 }
 #site-description {
 	clear: right;
@@ -1471,4 +1472,36 @@ code {
 	border:1px solid #CCC;
 	margin:6px;
 	padding:2.5px;
+}
+
+.entry-date {
+	background-color: white;
+	float: left;
+	background: url(images/calendar.png);
+	width: 50px;
+	text-align: center;
+	line-height: 20px;
+}
+
+.cat-links {
+	background: url('images/mini-category.png');
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+.tag-links {
+	background: url('images/mini-tag.png');
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+.comments-link {
+	background: url('images/mini-comment.png');
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+.author {
+	background: url('images/mini-user.png');
+	background-repeat: no-repeat;
+	padding-left: 20px;
 }
