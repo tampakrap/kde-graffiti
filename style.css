@@ -381,7 +381,8 @@ a:hover {
 	font-style: italic;
 	margin: 14px 0 18px 0;
 	width: 220px;
-        height: 22px;
+	height: 22px;
+	text-shadow: 2px 2px 2px #888;
 }
 
 /* This is the custom header image */
@@ -425,6 +426,7 @@ div.menu li {
 	line-height: 38px;
 	padding: 0 10px;
 	text-decoration: none;
+	text-shadow: 2px 2px 2px #ddd;
 }
 #access ul ul {
 	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
@@ -446,11 +448,12 @@ div.menu li {
 	top: 0;
 }
 #access ul ul a {
-	background: #333;
+	background: #999;
 	line-height: 1em;
 	padding: 10px;
 	width: 160px;
 	height: auto;
+	opacity: 0.8;
 }
 #access li:hover > a,
 #access ul ul :hover > a {
@@ -463,6 +466,7 @@ div.menu li {
 #access ul li.current-menu-ancestor > a,
 #access ul li.current-menu-item > a,
 #access ul li.current-menu-parent > a {
+	text-shadow: 2px 2px 2px #ddd;
 	color: #4c4c4c;
 }
 * html #access ul li.current_page_item a,
@@ -585,14 +589,19 @@ div.menu li {
 	margin-bottom: 0;
     text-align: center
 }
-.entry-title a:link,
-.entry-title a:visited {
-	color: #5e5e5e;
+.entry-title a:link {
+	color: #333;
 	text-decoration: none;
 }
+
+.entry-title a:visited {
+	color: #707070;
+	text-decoration: none;
+}
+
 .entry-title a:active,
 .entry-title a:hover {
-	color: #6d6d6d;
+	color: #aaa;
 }
 .entry-meta {
 	color: #333;
@@ -877,25 +886,26 @@ body.page .edit-link {
 }
 .navigation a:link,
 .navigation a:visited {
-	color: #333;
+	color: #bbb;
 	text-decoration: none;
+	text-shadow: 2px 2px 2px black;
 }
 .navigation a:active,
 .navigation a:hover {
-	color: #ff4b33;
+	color: #888;
 }
 .nav-previous {
 	float: left;
     padding-left: 20px;
     text-align: left;
-	width: 50%;
+	width: 40%;
     background: url(images/arrow-left.png) no-repeat left center;
 }
 .nav-next {
 	float: right;
     padding-right: 20px;
 	text-align: right;
-	width: 50%;
+	width: 40%;
     background: url(images/arrow-right.png) no-repeat right center;
 }
 #nav-above {
