@@ -21,7 +21,7 @@
             <div class="plasma-center" >
                 <div id="colophon">
 			<div id="site-info">
-			KDE Air theme by <a href="http://kde-look.org/content/show.php?content=129377">csslayer</a>, forked by <a href="http://blog.tampakrap.gr">tampakrap</a> | The content of this blog is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+			KDE Graffiti by <a href="http://blog.tampakrap.gr">tampakrap</a>, fork of <a href="http://kde-look.org/content/show.php?content=129377">KDE Breathe</a> by <a href="http://csslayer.info">csslayer</a> | The content of this blog is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
 			</div><!-- #site-info -->
 
 			<div id="site-generator">
