@@ -401,8 +401,8 @@ function twentyten_posted_on() {
 		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><div class="entry-date">%3$s<br /><span style="font-size: 20px">%4$s</span></div></a>',
 			get_permalink(),
 			esc_attr( get_the_time() ),
-			date('M'),
-			date('j')
+			get_the_date('M'),
+			get_the_date('j')
 		),
 		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
 			get_author_posts_url( get_the_author_meta( 'ID' ) ),
