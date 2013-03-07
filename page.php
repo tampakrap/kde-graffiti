@@ -14,27 +14,27 @@
 
 get_header(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+        <div id="container">
+            <div id="content" role="main">
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
                             <div class="plasma-left-top"></div>
                             <div class="plasma-top"></div>
                             <div class="plasma-right-top"></div>
                             <div class="plasma-post-center" >
-				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<?php if ( is_front_page() ) { ?>
-						<h2 class="entry-title"><?php the_title(); ?></h2>
-					<?php } else { ?>
-						<h1 class="entry-title"><?php the_title(); ?></h1>
-					<?php } ?>
+                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <?php if ( is_front_page() ) { ?>
+                        <h2 class="entry-title"><?php the_title(); ?></h2>
+                    <?php } else { ?>
+                        <h1 class="entry-title"><?php the_title(); ?></h1>
+                    <?php } ?>
 
-					<div class="entry-content">
-						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
-						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
-					</div><!-- .entry-content -->
-				</div><!-- #post-## -->
+                    <div class="entry-content">
+                        <?php the_content(); ?>
+                        <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
+                        <?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
+                    </div><!-- .entry-content -->
+                </div><!-- #post-## -->
                          </div><!-- plasma-post-center -->
                          <div class="plasma-left-bottom" ></div>
                          <div class="plasma-bottom" ></div>
@@ -43,15 +43,15 @@ get_header(); ?>
                          <div class="plasma-top"></div>
                          <div class="plasma-right-top"></div>
                          <div class="plasma-post-center" >
-				<?php comments_template( '', true ); ?>
+                <?php comments_template( '', true ); ?>
                          </div><!-- plasma-post-center -->
                          <div class="plasma-left-bottom" ></div>
                          <div class="plasma-bottom" ></div>
                          <div class="plasma-right-bottom" ></div>
 <?php endwhile; ?>
 
-			</div><!-- #content -->
-		</div><!-- #container -->
+            </div><!-- #content -->
+        </div><!-- #container -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
