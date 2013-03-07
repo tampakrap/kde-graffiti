@@ -1477,9 +1477,12 @@ code {
     background-color: white;
     float: left;
     background: url(images/calendar.png);
-    width: 50px;
+    width: 45px;
     text-align: center;
     line-height: 20px;
+    height: 55px;
+    margin-right: 5px;
+    margin-top: 7px;
 }
 
 .cat-links {
